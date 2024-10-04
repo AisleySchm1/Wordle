@@ -1,9 +1,11 @@
 
 public class Words
 	{
-		public static void wordBank()
-		{
-String words[] = {"abaft",
+		
+		
+		
+			
+static String words[] = {"abaft",
 		"abase",
 		"abate",
 		"abbey",
@@ -3107,13 +3109,3 @@ String words[] = {"abaft",
 		"zones",
 };
 
-int wordsNumber = (int)(Math.random()*3107);
-String word = words[wordsNumber];
-
-	}
-		
-		//public static void pickWord()
-		//{
-			
-		//}
-	}

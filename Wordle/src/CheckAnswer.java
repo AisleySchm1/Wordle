@@ -4,13 +4,8 @@ public class CheckAnswer
 	{
 		public static void checkAnswer()
 		{
-			Scanner userStringInput = new Scanner (System.in);
 			
-			String answer = userStringInput.nextLine();
 			
-			answer = answer.toLowerCase();
-			
-			String[] check = answer.split("");
 			
 			switch(answer)
 			{
