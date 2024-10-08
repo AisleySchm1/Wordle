@@ -32,10 +32,23 @@ public class PlayGame
 			String[] check = guess.split(" ");
 			String[] answer = word.split(" ");
 			
-			for (int i = 0; )
+			for (int i = 0; i < 5; i++)
+				{
+					if (check[i] == answer[i])
+						{
+							System.out.println(check + " is the correct answer! You win!");
+						}
+					
+					else if (check[i] != answer[i])
+						{
+							for (int s = 0; s < check.length; s++)
+								{
+									if()
+								}
+						}
+				}
 		}
 		
-		public static void
 		
 		public static void lettersLeft()
 		{
