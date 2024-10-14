@@ -4,11 +4,13 @@ public class PlayGame
 	{
 
 		public static void main(String[] args)
-			{	
+			{
+				static int check = 0;
+				static String rawAnswer = Integer.toString(check);
 				intro();
 				Board.prepareBoard();
 				Board.displayBoard();
-				Words.wordBank();
+				//Words.wordBank();
 
 			}
 		
@@ -32,19 +34,19 @@ public class PlayGame
 			String[] check = guess.split(" ");
 			String[] answer = word.split(" ");
 			
-			for (int i = 0; i < 5; i++)
+			for (int i = 0; i < guess.length(); i++)
 				{
-					if (check[i] == answer[i])
+					if (check[i].equals(answer[i]))
 						{
-							System.out.println(check + " is the correct answer! You win!");
+							for (int col = 0; col < 5; col++)
+								{
+									Board.board
+								}
 						}
 					
-					else if (check[i] != answer[i])
+					else
 						{
-							for (int s = 0; s < check.length; s++)
-								{
-									if()
-								}
+							if (check[i])
 						}
 				}
 		}
