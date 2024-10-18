@@ -6,10 +6,13 @@ public class PlayGame
 		static int counter = 0;
 		static int turnCounter = 0;
 		static String word = word();
+		static int attemptCounter = 1;
 		
 		public static void main(String[] args)
 			{
 				intro();
+//				System.out.println("\nAttempt " + attemptCounter);
+//				attemptCounter++;
 				Board.prepareBoard();
 				Board.displayBoard();
 				userAnswer();
@@ -65,7 +68,7 @@ public class PlayGame
 			
 			 String baseWord = Words.words[wordsNumber];
 			 
-			 System.out.println(baseWord);
+			 //System.out.println(baseWord);
 			 
 			 return baseWord;
 		}
@@ -124,7 +127,7 @@ public class PlayGame
 		{
 			if (counter == 5)
 				{
-					System.out.println("\nCongrats! You win the game!");
+					System.out.println("\nCongrats! You win the game in " + turnCounter + " tries!");
 					
 					System.exit(0);
 				}
