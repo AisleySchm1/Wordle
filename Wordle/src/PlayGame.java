@@ -2,8 +2,7 @@ import java.util.Scanner;
 
 public class PlayGame
 	{
-		//static int check = 0;
-		//static String rawAnswer = Integer.toString(check);
+		
 		static int counter = 0;
 		static int turnCounter = 0;
 		static String word = word();
@@ -20,26 +19,36 @@ public class PlayGame
 				counter = 0;
 				
 				userAnswer();
+				System.out.println("");
+				Board.displayBoard();
 				turnCounter ++;
 				isWon();
 				counter = 0;
 				
 				userAnswer();
+				System.out.println("");
+				Board.displayBoard();
 				turnCounter ++;
 				isWon();
 				counter = 0;
 				
 				userAnswer();
+				System.out.println("");
+				Board.displayBoard();
 				turnCounter ++;
 				isWon();
 				counter = 0;
 				
 				userAnswer();
+				System.out.println("");
+				Board.displayBoard();
 				turnCounter ++;
 				isWon();
 				counter = 0;
 				
 				userAnswer();
+				System.out.println("");
+				Board.displayBoard();
 				turnCounter ++;
 				isWon();
 
@@ -73,14 +82,17 @@ public class PlayGame
 			String[] splitGuess = guess.split("");
 			String[] answer = word.split("");
 			
+			
 			int row = 0;
 			
 					for (int col = 0; col < 5; col++)
 						{
-							Board.board[row][col].equals(splitGuess[col]);
+							Board.board[row][col] = splitGuess[col];
 							
-							row ++;
+							//row ++;
 						}
+					row ++;
+					
 			
 			for (int i = 0; i < 5; i++)
 				{

@@ -32,5 +32,14 @@ public class Board
 			    System.out.println("- - - - - - - - - - -");
 			    System.out.println("| "+board[5][0]+" | "+board[5][1]+" | "+board[5][2]+" | "+board[5][3]+" | "+board[5][4]+" | ");
 			    System.out.println("- - - - - - - - - - -");
+			    
+//			    int row = 0;
+//				
+//						for (int col = 0; col < 5; col++)
+//							{
+//								Board.board[row][col].equals(splitGuess[col]);
+//								
+//								row ++;
+//							}
 			  }
 	}
